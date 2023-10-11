@@ -1,5 +1,5 @@
 # flask_4_databases_mysql_vm
-504 WK 4 Assignment creating using MySQL on an Azure VM
+504 WK 4 Assignment using MySQL on an Azure VM
 
 ## GCP VM Settings:
 
