@@ -33,3 +33,13 @@ After creation:
 6. Enter config to allow external connections on port 3306: $ sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 7. Change bind-address and mysqlx-bind-address to 0.0.0.0
 8. Restart mysql: $ /etc/init.d/mysql restart
+
+## Database
+
+The database used has two tables: patient and patient_medication. Patient tracks some basic info about the patient with a patient ID number being the primary key. Patient_medicaition tracks individual medications given to patients, linked by the patient_id primary key.
+
+## Errors
+
+The only errors that slowed my process were small syntax errors. I had difficulty loading in my env values but I forgot to include the load_dotenv() function. When loading the MySQL data into an html table, I got a syntax error in my {% for patient in data_1 %} line, but I originally did not include the second %, resulting in the syntax error.
+
+
